@@ -1,0 +1,118 @@
+:root {
+    --primary-bg: #009999;
+    --secondary-bg: #1affff;
+    --error-bg: #ff3300;
+    --input-bg: #f2f2f2;
+    --text-color: #fff;
+    --border-color: #262626;
+    --error-border: #ffff00;
+    --btn-color: #3333cc;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    min-width: 400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.page-wrapper,
+.data-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, 
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+form {
+    margin: auto 25px;
+    padding: 25px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 0.25rem;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--secondary-bg);
+    row-gap: 1rem;
+    font-size: 1.5rem;
+}
+
+
+input {
+    font-size: 3rem;
+    height: 55px;
+    width: 90%;
+    background-color: var(--input-bg);
+    color: var(--border-color);
+    border: 1px solid var(--btn-color);
+}
+
+#convert-btn {
+    background-color: var(--btn-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    width: 50%;
+    height: 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    width: 50%;
+}
+
+#reset-btn {
+    background-color: #8c8c8c;
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    width: 50%;
+    height: 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    width: 50%;
+}
+
+.output {
+    font-size: 2rem;
+    margin: 50px 25px;
+    padding: 25px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 0.25rem;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    min-height: 100px;
+    background-color: var(--secondary-bg);
+}
+
+.error {
+    background-color: var(--error-bg);
+    border: 2px solid var(--error-border);
+}
+
+.hide {
+    display: none;
+}
+
